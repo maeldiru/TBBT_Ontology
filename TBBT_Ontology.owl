@@ -1,0 +1,2899 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.org/umu/TBBT_Ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.org/umu/TBBT_Ontology">
+    <Prefix name="" IRI="http://purl.org/umu/tso#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="dcterms" IRI="http://purl.org/dc/terms/"/>
+    <Import>http://www.w3.org/2004/02/skos/core</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal xml:lang="en">Maria Elena Diaz Ruiz (maeldiru@uoc.edu)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">The Big Bang Theory Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">The purpose of this ontology is the description of TV Show The Big Bang Theory. These descriptions are performed by representing content resources, online resources, user interaction with content and agent participation in content.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Article"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Blog"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cast"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Category"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Character"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collaboration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Comment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Consumption"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ContentResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Context"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Episode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FictionalPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Film"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Follow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fragment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Itinerary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ItineraryResource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Like"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Multimedia"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MultimediaObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineGame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnlineResourceService"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Period"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Post"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Product"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Profile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Publisher"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RealPeriod"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RelationType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Relationship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialNetwork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suggestion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TVSerie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UserGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Videogame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Webpage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Website"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wiki"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAltquel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCast"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCategory"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCharacter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClipShow"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContext"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasContribution"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExpansion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExtendedVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFirstSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlashback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFlashforward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFragment"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterestIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInterquel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasItinerary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasItineraryResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMakingOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMember"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasMidquel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextInCreation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextInPublication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextInStoryTimeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextItineraryResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasNextSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParaquel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParticipation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerson"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrequel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousEpisode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousInCreation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousInPublication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousInStoryTimeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousItineraryResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPreviousSeason"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProduct"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPseudoquel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPublisher"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasReboot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedContent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedPeriod"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelatedResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelationType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRelationship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRemake"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRetcon"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSequel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSidequel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSoftReboot"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpinOff"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartingResource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStartpoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSubgroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopic"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasUsergroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVersion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAltquelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCastOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCharacterOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isClipShowOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContextOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isContributionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isEventOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExpansionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExtendedVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstEpisodeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFirstSeasonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFlashbackOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFlashfordwardOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isFragmentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isInterquelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isItineraryOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isItineraryResourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMakingOfOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMidquelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParaquelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParticipationFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isParticipationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPersonOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPrequelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProductOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPseudoquelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRebootOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedAgentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedContentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedLocationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRelatedPeriodOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRemakeOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRetconOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSequelOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSidequel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSoftRebootOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSpinOffOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStartingResourceOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStartpointOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSubgroupOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUsergroup"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isVersionOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#participates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#relationshipAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#bio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#birthDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#coordinates"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#creationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#deathDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#defunctionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#endDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#foundationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#gender"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#groupname"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#number"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#plot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#publicationDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#startDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#url"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#username"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Article"/>
+        <Class IRI="#Wiki"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Blog"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#hasPerson"/>
+            <Class IRI="#Person"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCharacter"/>
+            <Class IRI="#Character"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isCastOf"/>
+            <Class IRI="#ContentResource"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cast"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPerson"/>
+            <Class IRI="#Person"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Category"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Character"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isMemberOf"/>
+            <Class IRI="#FictionalGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collaboration"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comic"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Comment"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Consumption"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ContentResource"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPerson"/>
+            <Class IRI="#Person"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRole"/>
+            <Class IRI="#Role"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contribution"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isContributionOf"/>
+            <Class IRI="#ContentResource"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creation"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectMinCardinality cardinality="0">
+            <ObjectProperty IRI="#hasNextEpisode"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPreviousEpisode"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isFirstEpisodeOf"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasNextEpisode"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Episode"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasPreviousEpisode"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#Fragment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalGroup"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasMember"/>
+            <Class IRI="#Character"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubgroup"/>
+            <Class IRI="#FictionalGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isSubgroupOf"/>
+            <Class IRI="#FictionalGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FictionalPeriod"/>
+        <Class IRI="#Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Film"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Follow"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fragment"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasMember"/>
+            <Class IRI="#Person"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasSubgroup"/>
+            <Class IRI="#Group"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isSubgroupOf"/>
+            <Class IRI="#Group"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ItineraryResource"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasItineraryResource"/>
+            <Class IRI="#Resource"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Like"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Multimedia"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MultimediaObject"/>
+        <Class IRI="#Multimedia"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineGame"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnlineResourceService"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isParticipationFor"/>
+            <Class IRI="#Resource"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#isParticipationOf"/>
+            <Class IRI="#User"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isMemberOf"/>
+            <Class IRI="#Group"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Post"/>
+        <Class IRI="#Blog"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Product"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Profile"/>
+        <Class IRI="#SocialNetwork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rating"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RealPeriod"/>
+        <Class IRI="#Period"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RelationType"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relationship"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRelationType"/>
+            <Class IRI="#RelationType"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Relationship"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#relationshipAgent"/>
+            <Class IRI="#Agent"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class abbreviatedIRI="skos:Concept"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Season"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialNetwork"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suggestion"/>
+        <Class IRI="#Participation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVSerie"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVSerie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasFirstEpisode"/>
+            <Class IRI="#Episode"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Videogame"/>
+        <Class IRI="#ContentResource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Webpage"/>
+        <Class IRI="#Website"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Website"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Wiki"/>
+        <Class IRI="#OnlineResourceService"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAltquel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasClipShow"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExpansion"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasExtendedVersion"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFlashback"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasFlashforward"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInterquel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMakingOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasMidquel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParaquel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPrequel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPreviousEpisode"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProduct"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPseudoquel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasReboot"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRelatedContent"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRemake"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRetcon"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSequel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSidequel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSoftReboot"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasSpinOff"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasStartpoint"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasVersion"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAltquelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isClipShowOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExpansionOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExtendedVersionOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFlashbackOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isFlashfordwardOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isInterquelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMakingOfOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMidquelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isParaquelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPrequelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isProductOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPseudoquelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRebootOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRelatedContentOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRemakeOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isRetconOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSequelOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSidequel"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSoftRebootOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isSpinOffOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isStartpointOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isVersionOf"/>
+        <ObjectProperty IRI="#storytellingRelation"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAltquel"/>
+        <ObjectProperty IRI="#isAltquelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCast"/>
+        <ObjectProperty IRI="#isCastOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <ObjectProperty IRI="#isCharacterOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasClipShow"/>
+        <ObjectProperty IRI="#isClipShowOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasContext"/>
+        <ObjectProperty IRI="#isContextOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasContribution"/>
+        <ObjectProperty IRI="#isContributionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEvent"/>
+        <ObjectProperty IRI="#isEventOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExpansion"/>
+        <ObjectProperty IRI="#isExpansionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExtendedVersion"/>
+        <ObjectProperty IRI="#isExtendedVersionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFirstEpisode"/>
+        <ObjectProperty IRI="#isFirstEpisodeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFirstSeason"/>
+        <ObjectProperty IRI="#isFirstSeasonOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFlashback"/>
+        <ObjectProperty IRI="#isFlashbackOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFlashforward"/>
+        <ObjectProperty IRI="#isFlashfordwardOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasFragment"/>
+        <ObjectProperty IRI="#isFragmentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInterquel"/>
+        <ObjectProperty IRI="#isInterquelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasItinerary"/>
+        <ObjectProperty IRI="#isItineraryOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasItineraryResource"/>
+        <ObjectProperty IRI="#isItineraryResourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMakingOf"/>
+        <ObjectProperty IRI="#isMakingOfOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectProperty IRI="#isMemberOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasMidquel"/>
+        <ObjectProperty IRI="#isMidquelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNextInCreation"/>
+        <ObjectProperty IRI="#hasPreviousInCreation"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNextInPublication"/>
+        <ObjectProperty IRI="#hasPreviousInPublication"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNextInStoryTimeline"/>
+        <ObjectProperty IRI="#hasPreviousInStoryTimeline"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNextItineraryResource"/>
+        <ObjectProperty IRI="#hasNextItineraryResource"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasNextSeason"/>
+        <ObjectProperty IRI="#hasPreviousSeason"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasParaquel"/>
+        <ObjectProperty IRI="#isParaquelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPerson"/>
+        <ObjectProperty IRI="#isPersonOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPrequel"/>
+        <ObjectProperty IRI="#isPrequelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProduct"/>
+        <ObjectProperty IRI="#isProductOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPseudoquel"/>
+        <ObjectProperty IRI="#isPseudoquelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <ObjectProperty IRI="#isPublisherOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasReboot"/>
+        <ObjectProperty IRI="#isRebootOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelatedAgent"/>
+        <ObjectProperty IRI="#isRelatedAgentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelatedContent"/>
+        <ObjectProperty IRI="#isRelatedContentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelatedLocation"/>
+        <ObjectProperty IRI="#isRelatedLocationOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRelatedPeriod"/>
+        <ObjectProperty IRI="#isRelatedPeriodOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRemake"/>
+        <ObjectProperty IRI="#isRemakeOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasRetcon"/>
+        <ObjectProperty IRI="#isRetconOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSequel"/>
+        <ObjectProperty IRI="#isSequelOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSidequel"/>
+        <ObjectProperty IRI="#isSidequel"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSoftReboot"/>
+        <ObjectProperty IRI="#isSoftRebootOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSpinOff"/>
+        <ObjectProperty IRI="#isSpinOffOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStartingResource"/>
+        <ObjectProperty IRI="#isStartingResourceOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStartpoint"/>
+        <ObjectProperty IRI="#isStartpointOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasUsergroup"/>
+        <ObjectProperty IRI="#isUsergroup"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasVersion"/>
+        <ObjectProperty IRI="#isVersionOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isParticipationOf"/>
+        <ObjectProperty IRI="#participates"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRelatedResource"/>
+    </SymmetricObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCast"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Cast"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContext"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasContribution"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFirstEpisode"/>
+        <ObjectUnionOf>
+            <Class IRI="#Season"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFirstSeason"/>
+        <Class IRI="#TVSerie"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFragment"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInterestIn"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasItinerary"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasItineraryResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextItineraryResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasNextSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParticipation"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerson"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cast"/>
+            <Class IRI="#Contribution"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreviousEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreviousItineraryResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPreviousSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedAgent"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedLocation"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedPeriod"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelatedResource"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelationType"/>
+        <Class IRI="#Relationship"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRelationship"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Contribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStartingResource"/>
+        <Class IRI="#Itinerary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSubgroup"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasUsergroup"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCastOf"/>
+        <Class IRI="#Cast"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCharacterOf"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContextOf"/>
+        <Class IRI="#Context"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isContributionOf"/>
+        <Class IRI="#Contribution"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isEventOf"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFirstEpisodeOf"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFirstSeasonOf"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isFragmentOf"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isItineraryOf"/>
+        <Class IRI="#Itinerary"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isItineraryResourceOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParticipationFor"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isParticipationOf"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPersonOf"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPublisherOf"/>
+        <Class IRI="#Publisher"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelatedAgentOf"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelatedLocationOf"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRelatedPeriodOf"/>
+        <Class IRI="#Period"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStartingResourceOf"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSubgroupOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUsergroup"/>
+        <Class IRI="#UserGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#participates"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#relationshipAgent"/>
+        <Class IRI="#Relationship"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#storytellingRelation"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCast"/>
+        <Class IRI="#Cast"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCategory"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCharacter"/>
+        <Class IRI="#Character"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContext"/>
+        <Class IRI="#Context"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasContribution"/>
+        <Class IRI="#Contribution"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEvent"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFirstEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFirstSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFragment"/>
+        <Class IRI="#Fragment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInterestIn"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasItinerary"/>
+        <Class IRI="#Itinerary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasItineraryResource"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasMember"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextItineraryResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasNextSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPart"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParticipation"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerson"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPreviousEpisode"/>
+        <Class IRI="#Episode"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPreviousItineraryResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPreviousSeason"/>
+        <Class IRI="#Season"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPublisher"/>
+        <Class IRI="#Publisher"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedPeriod"/>
+        <Class IRI="#Period"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelatedResource"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelationType"/>
+        <Class IRI="#RelationType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRelationship"/>
+        <Class IRI="#Relationship"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRole"/>
+        <Class IRI="#Role"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStartingResource"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSubgroup"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTopic"/>
+        <Class IRI="#Category"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasUsergroup"/>
+        <Class IRI="#UserGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCastOf"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCharacterOf"/>
+        <Class IRI="#Cast"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContextOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isContributionOf"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isEventOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFirstEpisodeOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Season"/>
+            <Class IRI="#TVSerie"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFirstSeasonOf"/>
+        <Class IRI="#TVSerie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isFragmentOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isItineraryOf"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isItineraryResourceOf"/>
+        <Class IRI="#ItineraryResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMemberOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParticipationFor"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isParticipationOf"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPersonOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Cast"/>
+            <Class IRI="#Contribution"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPublisherOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRelatedAgentOf"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRelatedLocationOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRelatedPeriodOf"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStartingResourceOf"/>
+        <Class IRI="#Itinerary"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSubgroupOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUsergroup"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#participates"/>
+        <Class IRI="#Participation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#relationshipAgent"/>
+        <Class IRI="#Agent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#storytellingRelation"/>
+        <Class IRI="#ContentResource"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#bio"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#User"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#birthDate"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#coordinates"/>
+        <Class IRI="#RealLocation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#creationDate"/>
+        <Class IRI="#Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#deathDate"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#defunctionDate"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#description"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Context"/>
+            <Class IRI="#Episode"/>
+            <Class IRI="#Itinerary"/>
+            <Class IRI="#ItineraryResource"/>
+            <Class IRI="#Location"/>
+            <Class IRI="#Participation"/>
+            <Class IRI="#Period"/>
+            <Class IRI="#Publisher"/>
+            <Class IRI="#Resource"/>
+            <Class IRI="#Season"/>
+            <Class IRI="#User"/>
+            <Class IRI="#UserGroup"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#endDate"/>
+        <Class IRI="#Period"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#foundationDate"/>
+        <ObjectUnionOf>
+            <Class IRI="#FictionalGroup"/>
+            <Class IRI="#Group"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#gender"/>
+        <ObjectUnionOf>
+            <Class IRI="#Character"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <ObjectUnionOf>
+            <Class IRI="#Agent"/>
+            <Class IRI="#Context"/>
+            <Class IRI="#Episode"/>
+            <Class IRI="#Itinerary"/>
+            <Class IRI="#Location"/>
+            <Class IRI="#Period"/>
+            <Class IRI="#Publisher"/>
+            <Class IRI="#Resource"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#number"/>
+        <ObjectUnionOf>
+            <Class IRI="#Episode"/>
+            <Class IRI="#Season"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#plot"/>
+        <Class IRI="#Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#publicationDate"/>
+        <Class IRI="#Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#startDate"/>
+        <Class IRI="#Period"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#url"/>
+        <Class IRI="#Resource"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#username"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#value"/>
+        <Class IRI="#Participation"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#coordinates"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#creationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#publicationDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Agent</IRI>
+        <Literal xml:lang="en">An agent is a person or organization (real or fictitious) that participates in some way in the elaboration of a resource or is part of the argument of the content. The agents participate in content resources as part of the cast or the creative or technical team that contributes to its creation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Agent</IRI>
+        <Literal xml:lang="en">Agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Article</IRI>
+        <Literal xml:lang="en">Article</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Blog</IRI>
+        <Literal xml:lang="en">Blog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Book</IRI>
+        <Literal xml:lang="en">Book</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cast</IRI>
+        <Literal xml:lang="en">Cast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Category</IRI>
+        <Literal xml:lang="en">Category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Character</IRI>
+        <Literal xml:lang="en">Character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Collaboration</IRI>
+        <Literal xml:lang="en">Collaboration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comic</IRI>
+        <Literal xml:lang="en">Comic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Comment</IRI>
+        <Literal xml:lang="en">Comment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Consumption</IRI>
+        <Literal xml:lang="en">Consumption</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ContentResource</IRI>
+        <Literal xml:lang="en">Content Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Context</IRI>
+        <Literal xml:lang="en">Context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Contribution</IRI>
+        <Literal xml:lang="en">Contribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Creation</IRI>
+        <Literal xml:lang="en">Creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Episode</IRI>
+        <Literal xml:lang="en">Episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">Event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalGroup</IRI>
+        <Literal xml:lang="en">Fictional Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalLocation</IRI>
+        <Literal xml:lang="en">Fictional Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FictionalPeriod</IRI>
+        <Literal xml:lang="en">Fictional Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Film</IRI>
+        <Literal xml:lang="en">Film</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Follow</IRI>
+        <Literal xml:lang="en">Follow</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Fragment</IRI>
+        <Literal xml:lang="en">Fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Group</IRI>
+        <Literal xml:lang="en">Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Itinerary</IRI>
+        <Literal xml:lang="en">Itinerary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ItineraryResource</IRI>
+        <Literal xml:lang="en">Itinerary Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Like</IRI>
+        <Literal xml:lang="en">Like</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Location</IRI>
+        <Literal xml:lang="en">Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Multimedia</IRI>
+        <Literal xml:lang="en">Multimedia</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MultimediaObject</IRI>
+        <Literal xml:lang="en">Multimedia Object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineGame</IRI>
+        <Literal xml:lang="en">Online Game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OnlineResourceService</IRI>
+        <Literal xml:lang="en">Online Resource/Service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Participation</IRI>
+        <Literal xml:lang="en">Participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Period</IRI>
+        <Literal xml:lang="en">Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">Person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Post</IRI>
+        <Literal xml:lang="en">Post</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Product</IRI>
+        <Literal xml:lang="en">Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Profile</IRI>
+        <Literal xml:lang="en">Profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Publisher</IRI>
+        <Literal xml:lang="en">Publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Rating</IRI>
+        <Literal xml:lang="en">Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealLocation</IRI>
+        <Literal xml:lang="en">Real Location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RealPeriod</IRI>
+        <Literal xml:lang="en">Real Period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#RelationType</IRI>
+        <Literal xml:lang="en">Relation Type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Relationship</IRI>
+        <Literal xml:lang="en">Relationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Resource</IRI>
+        <Literal xml:lang="en">Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Role</IRI>
+        <Literal xml:lang="en">Role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Season</IRI>
+        <Literal xml:lang="en">Season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialNetwork</IRI>
+        <Literal xml:lang="en">Social Network</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Suggestion</IRI>
+        <Literal xml:lang="en">Suggestion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TVSerie</IRI>
+        <Literal xml:lang="en">TV Serie</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#User</IRI>
+        <Literal xml:lang="en">User</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UserGroup</IRI>
+        <Literal xml:lang="en">User Group</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Videogame</IRI>
+        <Literal xml:lang="en">Video game</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Webpage</IRI>
+        <Literal xml:lang="en">Webpage</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Website</IRI>
+        <Literal xml:lang="en">Website</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Wiki</IRI>
+        <Literal xml:lang="en">Wiki</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#bio</IRI>
+        <Literal xml:lang="en">bio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#birthDate</IRI>
+        <Literal xml:lang="en">birth date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#coordinates</IRI>
+        <Literal xml:lang="en">coordinates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#creationDate</IRI>
+        <Literal xml:lang="en">creation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#deathDate</IRI>
+        <Literal xml:lang="en">death date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#defunctionDate</IRI>
+        <Literal xml:lang="en">defunction date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#description</IRI>
+        <Literal xml:lang="en">description</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#endDate</IRI>
+        <Literal xml:lang="en">end date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#foundationDate</IRI>
+        <Literal xml:lang="en">foundation date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#gender</IRI>
+        <Literal xml:lang="en">gender</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#groupname</IRI>
+        <Literal xml:lang="en">group name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAltquel</IRI>
+        <Literal xml:lang="en">has altquel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCast</IRI>
+        <Literal xml:lang="en">has cast</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCategory</IRI>
+        <Literal xml:lang="en">has category</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCharacter</IRI>
+        <Literal xml:lang="en">has character</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasClipShow</IRI>
+        <Literal xml:lang="en">has clip show</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasContext</IRI>
+        <Literal xml:lang="en">has context</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasContribution</IRI>
+        <Literal xml:lang="en">has contribution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEvent</IRI>
+        <Literal xml:lang="en">has event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasExpansion</IRI>
+        <Literal xml:lang="en">has expansion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasExtendedVersion</IRI>
+        <Literal xml:lang="en">has extended version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFirstEpisode</IRI>
+        <Literal xml:lang="en">has first episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFirstSeason</IRI>
+        <Literal xml:lang="en">has first season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFlashback</IRI>
+        <Literal xml:lang="en">has flashback</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFlashforward</IRI>
+        <Literal xml:lang="en">has flashfordward</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasFragment</IRI>
+        <Literal xml:lang="en">has fragment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInterestIn</IRI>
+        <Literal xml:lang="en">has interest in</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasInterquel</IRI>
+        <Literal xml:lang="en">has interquel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasItinerary</IRI>
+        <Literal xml:lang="en">has itinerary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasItineraryResource</IRI>
+        <Literal xml:lang="en">has itinerary resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMakingOf</IRI>
+        <Literal xml:lang="en">has making-of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMember</IRI>
+        <Literal xml:lang="en">has Member</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasMidquel</IRI>
+        <Literal xml:lang="en">has midquel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextEpisode</IRI>
+        <Literal xml:lang="en">has next episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextInCreation</IRI>
+        <Literal xml:lang="en">has next in creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextInPublication</IRI>
+        <Literal xml:lang="en">has next in publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextInStoryTimeline</IRI>
+        <Literal xml:lang="en">has next in timeline story</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextItineraryResource</IRI>
+        <Literal xml:lang="en">has next itinerary resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasNextSeason</IRI>
+        <Literal xml:lang="en">has next season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasParaquel</IRI>
+        <Literal xml:lang="en">has paraquel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">has part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasParticipation</IRI>
+        <Literal xml:lang="en">has participation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPerson</IRI>
+        <Literal xml:lang="en">has person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPrequel</IRI>
+        <Literal xml:lang="en">has prequel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousEpisode</IRI>
+        <Literal xml:lang="en">has previous episode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousInCreation</IRI>
+        <Literal xml:lang="en">has previous in creation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousInPublication</IRI>
+        <Literal xml:lang="en">has previous in publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousInStoryTimeline</IRI>
+        <Literal xml:lang="en">has previous in timeline story</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousItineraryResource</IRI>
+        <Literal xml:lang="en">has previous itinerary resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPreviousSeason</IRI>
+        <Literal xml:lang="en">has previous season</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasProduct</IRI>
+        <Literal xml:lang="en">has product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPseudoquel</IRI>
+        <Literal xml:lang="en">has pseudoquel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPublisher</IRI>
+        <Literal xml:lang="en">has publisher</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasReboot</IRI>
+        <Literal xml:lang="en">has reboot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedAgent</IRI>
+        <Literal xml:lang="en">has related agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedContent</IRI>
+        <Literal xml:lang="en">has related content</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedLocation</IRI>
+        <Literal xml:lang="en">has related location</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedPeriod</IRI>
+        <Literal xml:lang="en">has related period</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelatedResource</IRI>
+        <Literal xml:lang="en">has related resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelationType</IRI>
+        <Literal xml:lang="en">has relation type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRelationship</IRI>
+        <Literal xml:lang="en">has relationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRemake</IRI>
+        <Literal xml:lang="en">has remake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRetcon</IRI>
+        <Literal xml:lang="en">has retcon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRole</IRI>
+        <Literal xml:lang="en">has role</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSequel</IRI>
+        <Literal xml:lang="en">has sequel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSidequel</IRI>
+        <Literal xml:lang="en">has sidequel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSoftReboot</IRI>
+        <Literal xml:lang="en">has soft reboot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSpinOff</IRI>
+        <Literal xml:lang="en">has spin-off</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStartingResource</IRI>
+        <Literal xml:lang="en">has starting resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasStartpoint</IRI>
+        <Literal xml:lang="en">has startpoint</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasSubgroup</IRI>
+        <Literal xml:lang="en">has subgroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTopic</IRI>
+        <Literal xml:lang="en">has topic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasUsergroup</IRI>
+        <Literal xml:lang="en">has usergroup</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasVersion</IRI>
+        <Literal xml:lang="en">has version</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isAltquelOf</IRI>
+        <Literal xml:lang="en">is altquel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCastOf</IRI>
+        <Literal xml:lang="en">is cast of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isCharacterOf</IRI>
+        <Literal xml:lang="en">is character of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isClipShowOf</IRI>
+        <Literal xml:lang="en">is clip show of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isContextOf</IRI>
+        <Literal xml:lang="en">is context of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isContributionOf</IRI>
+        <Literal xml:lang="en">is contribution of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isEventOf</IRI>
+        <Literal xml:lang="en">is event of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isExpansionOf</IRI>
+        <Literal xml:lang="en">is expansion of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isExtendedVersionOf</IRI>
+        <Literal xml:lang="en">is extended version of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFirstEpisodeOf</IRI>
+        <Literal xml:lang="en">is first episode of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFirstSeasonOf</IRI>
+        <Literal xml:lang="en">is first season of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFlashbackOf</IRI>
+        <Literal xml:lang="en">is flashback of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFlashfordwardOf</IRI>
+        <Literal xml:lang="en">is flashforward of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isFragmentOf</IRI>
+        <Literal xml:lang="en">is fragment of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isInterquelOf</IRI>
+        <Literal xml:lang="en">is interquel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isItineraryOf</IRI>
+        <Literal xml:lang="en">is itinerary of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isItineraryResourceOf</IRI>
+        <Literal xml:lang="en">is itinerary resource of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isMakingOfOf</IRI>
+        <Literal xml:lang="en">is making-of of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isMidquelOf</IRI>
+        <Literal xml:lang="en">is midquel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isParaquelOf</IRI>
+        <Literal xml:lang="en">is paraquel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPartOf</IRI>
+        <Literal xml:lang="en">is part of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isParticipationFor</IRI>
+        <Literal xml:lang="en">is participation for</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isParticipationOf</IRI>
+        <Literal xml:lang="en">is participation of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPersonOf</IRI>
+        <Literal xml:lang="en">is person of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPrequelOf</IRI>
+        <Literal xml:lang="en">is prequel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isProductOf</IRI>
+        <Literal xml:lang="en">is product of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPseudoquelOf</IRI>
+        <Literal xml:lang="en">is pseudoquel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isPublisherOf</IRI>
+        <Literal xml:lang="en">is publisher of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRebootOf</IRI>
+        <Literal xml:lang="en">is reboot of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRelatedAgentOf</IRI>
+        <Literal xml:lang="en">is related agent of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRelatedContentOf</IRI>
+        <Literal xml:lang="en">is related content of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRelatedLocationOf</IRI>
+        <Literal xml:lang="en">is related location of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRelatedPeriodOf</IRI>
+        <Literal xml:lang="en">is related period of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRemakeOf</IRI>
+        <Literal xml:lang="en">is remake of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isRetconOf</IRI>
+        <Literal xml:lang="en">is retcon of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSequelOf</IRI>
+        <Literal xml:lang="en">is sequel of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSidequel</IRI>
+        <Literal xml:lang="en">is sidequel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSoftRebootOf</IRI>
+        <Literal xml:lang="en">is soft reboot of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSpinOffOf</IRI>
+        <Literal xml:lang="en">is spin-off of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStartingResourceOf</IRI>
+        <Literal xml:lang="en">is starting resource of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isStartpointOf</IRI>
+        <Literal xml:lang="en">is startpoint of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isSubgroupOf</IRI>
+        <Literal xml:lang="en">is subgroup of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isUsergroup</IRI>
+        <Literal xml:lang="en">is usergroup of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#isVersionOf</IRI>
+        <Literal xml:lang="en">is version of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#name</IRI>
+        <Literal xml:lang="en">name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#number</IRI>
+        <Literal xml:lang="en">number</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#participates</IRI>
+        <Literal xml:lang="en">participates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#plot</IRI>
+        <Literal xml:lang="en">plot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#publicationDate</IRI>
+        <Literal xml:lang="en">publication date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#relationshipAgent</IRI>
+        <Literal xml:lang="en">relationship agent</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#startDate</IRI>
+        <Literal xml:lang="en">start date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#storytellingRelation</IRI>
+        <Literal xml:lang="en">storytelling relation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#url</IRI>
+        <Literal xml:lang="en">resource URL</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#username</IRI>
+        <Literal xml:lang="en">user name</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#value</IRI>
+        <Literal xml:lang="en">value</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
